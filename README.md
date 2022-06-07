@@ -28,11 +28,6 @@ Philo is a program that visualises dining philosophers with status logs in termi
 * A fork lies between each philosopher.
 * Each fork is a mutex.
 
-### Bonus program `philo_bonus` folder
-* Each philosopher is a process.
-* All forks lie at the center of the table.
-* Forks are represented by semaphores.
-
 ## To compile and run
 Run the following commands in Terminal:
 ```shell
@@ -42,8 +37,6 @@ Run the following commands in Terminal:
 # to run
 > ./philo 21 800 200 100 10
 ```
-
-![Philos Demo](preview/philos-demo.gif)
 
 ### Program arguments
 
@@ -56,11 +49,3 @@ Run the following commands in Terminal:
 `time_to_sleep (in milliseconds)`: The time a philosopher will spend sleeping.
 
 _`[number_of_times_each_philosopher_must_eat]`_ (optional argument): If all philosophers have eaten at least number_of_times_each_philosopher_must_eat times, the simulation stops. If not specified, the simulation stops when a philosopher dies.
-
-### Visualisation for `./philo 15 800 250 200 5`
-
-![15 philos](preview/15philos.png)
-
-## Useful links
-
-* Philosophers [visualiser](https://nafuka11.github.io/philosophers-visualizer/)
